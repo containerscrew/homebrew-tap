@@ -1,4 +1,4 @@
-# containerscrew Homebrew Tap
+# containerscrew homebrew tap
 
 Homebrew tap for containerscrew CLI tools.
 
@@ -8,13 +8,12 @@ Homebrew tap for containerscrew CLI tools.
 brew tap containerscrew/tap
 ```
 
-# Examples
+# Examples
 
 ```bash
 brew install --cask rsecure
 ```
 
-
-# License
+# License
 
 Each tool is licensed individually.
