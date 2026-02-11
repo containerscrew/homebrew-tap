@@ -13,27 +13,27 @@ cask "rsecure" do
 
   on_macos do
     on_intel do
-      url "https://github.com/containerscrew/rsecure/releases/download/#{version}/rsecure-darwin-amd64.tar.gz",
+      url "https://github.com/containerscrew/rsecure/releases/download/#{version}/rsecure_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/containerscrew/rsecure/"
-      sha256 "b2702f8598b415498192904e11f83228400b9ff0d3cf0dbeae8e233fd430f133"
+      sha256 "803f4d7a5e908fef82ade530f6e2f5ed6a53174055b9745556c88dfd11d4df88"
     end
     on_arm do
-      url "https://github.com/containerscrew/rsecure/releases/download/#{version}/rsecure-darwin-arm64.tar.gz",
+      url "https://github.com/containerscrew/rsecure/releases/download/#{version}/rsecure_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/containerscrew/rsecure/"
-      sha256 "80ef67ac6973581db7b3664d9bf0755deba9e37ccb632776a3a0642fbfba0662"
+      sha256 "ae7412f29a13b57759e63c8b11460918c37c69409d76f625dcf51f51eef52811"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/containerscrew/rsecure/releases/download/#{version}/rsecure-linux-amd64.tar.gz",
+      url "https://github.com/containerscrew/rsecure/releases/download/#{version}/rsecure_#{version}_linux_amd64.tar.gz",
         verified: "github.com/containerscrew/rsecure/"
-      sha256 "4b93f6135695b237ce9ba3ae61bb8e9b44f3833b559392b04780db8e14260358"
+      sha256 "e9b5d83807d021ac120eb4b3952e4d1f8c5c8fd0fa41e77742325a4bd4f45887"
     end
     on_arm do
-      url "https://github.com/containerscrew/rsecure/releases/download/#{version}/rsecure-linux-arm64.tar.gz",
+      url "https://github.com/containerscrew/rsecure/releases/download/#{version}/rsecure_#{version}_linux_arm64.tar.gz",
         verified: "github.com/containerscrew/rsecure/"
-      sha256 "1603a494f97e9a88f944d7602cc1d0a22e8ef68c3cdafc98f71afd5d6008e0b5"
+      sha256 "d79084428f798606b61283614ea0af859d6d7c6aef494db4b8d5cd6e3a41b9c0"
     end
   end
 
