@@ -2,7 +2,11 @@
 
 Homebrew tap for containerscrew CLI tools.
 
-# Installation
+# Available brews
+
+- `rsecure`: https://github.com/containerscrew/rsecure
+
+# Usage
 
 ```bash
 brew tap containerscrew/tap
