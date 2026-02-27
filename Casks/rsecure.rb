@@ -3,7 +3,7 @@ cask "rsecure" do
   name "rsecure"
   desc "Secure file encryption using pure Rust and AES"
   homepage "https://github.com/containerscrew/rsecure"
-  version "0.3.2"
+  version "0.3.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "rsecure" do
     on_intel do
       url "https://github.com/containerscrew/rsecure/releases/download/#{version}/rsecure_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/containerscrew/rsecure/"
-      sha256 "21c870ef26d14b132b782cdbd859860c2c94d3ab63c684e96a4a860522ab285c"
+      sha256 "cac5478b95abed43b32b91db9f25e00b6a2075d36251b836e6dac9527b5e71fb"
     end
     on_arm do
       url "https://github.com/containerscrew/rsecure/releases/download/#{version}/rsecure_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/containerscrew/rsecure/"
-      sha256 "9c36b107d03d6c8177ec74f2010a996e6fa7b1b368d38c67aa12fe137b75c473"
+      sha256 "416daee299cccad04461e8c941da988ccd58e6b6ce10d9b6d85940ad0ecb78be"
     end
   end
 
@@ -28,12 +28,12 @@ cask "rsecure" do
     on_intel do
       url "https://github.com/containerscrew/rsecure/releases/download/#{version}/rsecure_#{version}_linux_amd64.tar.gz",
         verified: "github.com/containerscrew/rsecure/"
-      sha256 "01d160cdb61a657c176f3c3dfaf9cb5fdf69075689120a138ba673ae5b165c31"
+      sha256 "d6cee4b977dab36968a6427a5a69dacf2c4ea670dbac33415e52407445ea37da"
     end
     on_arm do
       url "https://github.com/containerscrew/rsecure/releases/download/#{version}/rsecure_#{version}_linux_arm64.tar.gz",
         verified: "github.com/containerscrew/rsecure/"
-      sha256 "f3ac8567a445b3c028b28491a56d67f16c0204cc0922d4c1e7c7071b677848c1"
+      sha256 "95861d871259be7a95df7ff4d4912e0d88ba1cec6424f282bb898d9f9e9dee03"
     end
   end
 
