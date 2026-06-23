@@ -1,36 +1,34 @@
 # containerscrew homebrew tap
 
-Homebrew tap for containerscrew CLI tools.
+Homebrew tap for `containerscrew` CLI tools.
 
-# Available brews
+## Available formulae
 
-- `rsecure`: https://github.com/containerscrew/rsecure
+- [`rsecure`](https://github.com/containerscrew/rsecure) — Secure file encryption using pure Rust and AES-256-GCM.
 
-# Usage
+## Usage
+
+Add the tap once:
 
 ```bash
 brew tap containerscrew/tap
 ```
 
-# Examples
+Then install any formula by name:
 
 ```bash
-brew install --cask rsecure
+brew install rsecure
 ```
 
-# macOS: Gatekeeper may block the binary
-
-<img width="251" height="260" alt="image" src="https://github.com/user-attachments/assets/f575200c-6b8e-45e2-a012-85f98d5073ac" />
-
-Run the following command in your terminal:
+Or install directly without tapping first:
 
 ```bash
-xattr -d com.apple.quarantine /opt/homebrew/bin/rsecure
+brew install containerscrew/tap/rsecure
 ```
-Or, go to `System Settings → Privacy & Security` and allow the applicaion not signed by the Apple ecosystem.
 
-<img width="482" height="193" alt="image" src="https://github.com/user-attachments/assets/bbfbc6bf-d9f3-406b-8ba0-30b03dbf0719" />
+> [!NOTE]
+> If you previously installed `rsecure` via the old cask (`brew install --cask rsecure`), uninstall it first with `brew uninstall --cask rsecure`. The cask has been replaced by a formula, which avoids the macOS Gatekeeper quarantine and no longer requires `xattr -d com.apple.quarantine`.
 
-# License
+## License
 
-Each tool is licensed individually.
+Each tool is licensed individually — see the linked repositories.
