@@ -5,21 +5,21 @@
 class Rsecure < Formula
   desc "Secure file encryption using pure Rust and AES"
   homepage "https://github.com/containerscrew/rsecure"
-  version "0.8.1"
+  version "0.9.0"
   license "GPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/containerscrew/rsecure/releases/download/0.8.1/rsecure_0.8.1_darwin_amd64.tar.gz"
-      sha256 "eeda5b9968a5d1bade37dcefcda4c317f37a74343a67a69dbbeb3eecbf2c46e9"
+      url "https://github.com/containerscrew/rsecure/releases/download/0.9.0/rsecure_0.9.0_darwin_amd64.tar.gz"
+      sha256 "bace8dd26090302838590a1aae4741e3d9e0c4d45bdf390c02a7a4432b352eed"
 
       define_method(:install) do
         bin.install "rsecure"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/containerscrew/rsecure/releases/download/0.8.1/rsecure_0.8.1_darwin_arm64.tar.gz"
-      sha256 "62e46a81472695920ed780e2436c33e4b55d7a8f5afb2822c984438d3b680a66"
+      url "https://github.com/containerscrew/rsecure/releases/download/0.9.0/rsecure_0.9.0_darwin_arm64.tar.gz"
+      sha256 "7e3e0d5d42f0fde4846b09aa9772f1f8e285fcfb8d8ee6fad38a8c7766dd29b9"
 
       define_method(:install) do
         bin.install "rsecure"
@@ -29,15 +29,15 @@ class Rsecure < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/containerscrew/rsecure/releases/download/0.8.1/rsecure_0.8.1_linux_amd64.tar.gz"
-      sha256 "0e2ee6ef783dd0ab04cb27964cd48057e81cb6fbbbcae0a4d05c3e909ae424bd"
+      url "https://github.com/containerscrew/rsecure/releases/download/0.9.0/rsecure_0.9.0_linux_amd64.tar.gz"
+      sha256 "82876fbb719c32057a4cd6065123a3d7eca1957091e400912261855fe244b4a8"
       define_method(:install) do
         bin.install "rsecure"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/containerscrew/rsecure/releases/download/0.8.1/rsecure_0.8.1_linux_arm64.tar.gz"
-      sha256 "8ca5efbe6f454c2dfb010cb00885ca9c2de8393f1983ae7cfbf090e4e91e9772"
+      url "https://github.com/containerscrew/rsecure/releases/download/0.9.0/rsecure_0.9.0_linux_arm64.tar.gz"
+      sha256 "e191a45ca4d727718211ca3b14e0457e04824e4c8cd056759a8d15466d941835"
       define_method(:install) do
         bin.install "rsecure"
       end
